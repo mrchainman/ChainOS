@@ -275,7 +275,7 @@ nerd-fonts-jetbrains-mono
 net-tools
 networkmanager-support
 newsboat
-nextcloud-client
+network-manager-applet
 nfs-utils
 nikto
 nilfs-utils
@@ -599,10 +599,7 @@ zip
 # Garuda
 garuda-assistant
 garuda-boot-options
-garuda-browser-settings
-garuda-common-settings
 garuda-downloader-git
-garuda-fish-config
 garuda-gamer
 garuda-hooks
 garuda-hotfixes
@@ -613,3 +610,4 @@ garuda-video-linux-config
 garuda-wallpapers
 garuda-wallpapers-extra
 garuda-welcome
+grub-theme-garuda-dr460nized
