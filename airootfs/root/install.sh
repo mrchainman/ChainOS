@@ -28,7 +28,7 @@ btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@snapshots
 umount /dev/sda2
 mount -o subvol=@ /dev/sda2 /mnt
-mkdir /mnt/.snapshots /dev/sda2 /mnt/home /mnt/root /mnt/var /mnt/boot
+mkdir /mnt/.snapshots /mnt/home /mnt/root /mnt/var /mnt/boot
 mount -o subvol=@root /dev/sda2 /mnt/root
 mount -o subvol=@home /dev/sda2 /mnt/home
 mount -o subvol=@var /dev/sda2 /mnt/var
