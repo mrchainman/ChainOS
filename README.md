@@ -35,3 +35,4 @@ Read it before executing!
 
 **CREDIT:**
 Most of the configuation for qtile and other programs are taken from https://github.com/dani-lp/dotfiles
+A lot of usefule packages come from the garuda and chaotic-aur repo https://garudalinux.org/
