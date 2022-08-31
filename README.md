@@ -1,4 +1,5 @@
 **WORK IN PROGRESS**
+
 Welcome to ChainOS!
 This is my spin on an arch distro.
 It is tailored a lot to my personal needs, so I don't reccomend to use the ISO you find in this repo, but to build it yourself, by modifing everything as needed.
@@ -16,6 +17,7 @@ The userconfiguration resied in airootfs/etc/skel/ which is the only folder that
 Once in the liveenvironment you can call `bash install.sh` to start the installation process.
 
 **CAREFUL**
+
 Since this repo is tailored exactly to my needs, the script does NOT ask questions or ask for confirmation. It will completly wipe the Harddrive.
 Read it before executing!
 
