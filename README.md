@@ -23,6 +23,7 @@ Since this repo is tailored exactly to my needs, the script does NOT ask questio
 Read it before executing!
 
 **Basic systeminfotmation:**
+- KR: linux-zen
 - OS: Archlinux
 - BL: systemd-boot
 - DM: sddm
