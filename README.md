@@ -4,7 +4,8 @@ Welcome to ChainOS!
 This is my spin on an arch distro.
 It is tailored a lot to my personal needs, so I don't reccomend to use the ISO you find in this repo, but to build it yourself, by modifing everything as needed.
 
-Some information:
+**Usage:**
+
 The build is based on releng and build based on archiso , see https://wiki.archlinux.org/title/Archiso#Installation
 
 There are to files, where you can specify the installed packages:
@@ -21,11 +22,15 @@ Once in the liveenvironment you can call `bash install.sh` to start the installa
 Since this repo is tailored exactly to my needs, the script does NOT ask questions or ask for confirmation. It will completly wipe the Harddrive.
 Read it before executing!
 
-Basic systeminfotmation:
+**Basic systeminfotmation:**
 - OS: Archlinux
+- BL: systemd-boot
 - DM: sddm
 - WM: qtile
-- Browser: qutebrowser
+- BR: qutebrowser
 - TE: Kitty
-- Colorscheme: Catppuccin
-- Packages: See files mentioned above
+- CS: Catppuccin
+- PG: See files mentioned above
+
+**CREDIT:**
+Most of the configuation for qtile and other programs are taken from https://github.com/dani-lp/dotfiles
