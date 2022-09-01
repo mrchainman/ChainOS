@@ -1,11 +1,16 @@
 #!/bin/bash
-nwp=$(shuf -n1 -e ~/.data/Pictures/Wallpapers/images/*)
-if [ "$1" == "new" ]
+wpd="$HOME/.data/Pictures/Wallpapers/images"
+wpc="$HOME/.config/wallpaper"
+if [ -d "$wpd" ]
 then
-	ln -sf $nwp ~/.config/wallpaper
+	nwp=$(shuf -n1 -e $wpd/*)
+	if [ "$1" == "new" ]
+	then
+		ln -sf $nwp $wpc
+	fi
 fi
-feh --no-fehbg --bg-fill ~/.config/wallpaper
+feh --no-fehbg --bg-fill $wpc
 if [ "$1" == "lock" ]
 then
-	betterlockscreen -u ~/.config/wallpaper
+	betterlockscreen -u $wpc
 fi
