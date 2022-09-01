@@ -7,6 +7,10 @@ chromium-widevine
 dialog
 dunst
 gksu
+gnome-themes-extra
+gtk-engine-murrine
+kvantum
+lxappearance-gtk3
 network-manager-applet
 networkmanager-support
 packagekit
@@ -56,5 +60,3 @@ xorg-xsetroot
 xorg-xwayland
 xorg-xwininfo
 xsel
-gtk-engine-murrine
-gnome-themes-extra

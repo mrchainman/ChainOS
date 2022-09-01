@@ -117,6 +117,7 @@ git
 gksu
 glibc
 gnome-epub-thumbnailer
+gnome-themes-extra
 gnu-netcat
 go
 go-tools
@@ -126,6 +127,7 @@ gptfdisk
 grep
 groff
 gstreamer-meta
+gtk-engine-murrine
 guitarix
 gzip
 hdparm
@@ -154,6 +156,7 @@ keepassxc
 khal
 kitty
 kpublictransport
+kvantum
 less
 lhasa
 libabw
@@ -221,6 +224,7 @@ lrzip
 lsb-release
 lsscsi
 lvm2
+lxappearance-gtk3
 lxc-git
 lzip
 lzop
