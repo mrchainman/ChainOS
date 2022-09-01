@@ -4,6 +4,7 @@ airootfs/etc/shadow
 airootfs/etc/group
 airootfs/etc/hostname
 airootfs/etc/env
+airootfs/etc/environemt
 airootfs/etc/pacman.d/gnupg
 airootfs/etc/skel/.local/share/gnupg
 airootfs/etc/skel/.local/share/pass
