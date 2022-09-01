@@ -18,7 +18,6 @@ linux-zen
 linux-zen-headers
 pacman
 pacman-contrib
-paru
 pciutils
 pcsclite
 procps-ng
