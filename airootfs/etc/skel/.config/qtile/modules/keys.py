@@ -109,6 +109,7 @@ keys = [
     Key([mod, shift], "r", lazy.restart(), desc="Restart Qtile"),
     # menus
     Key([mod], "e", lazy.spawn("rofi -show drun -theme ~/.config/rofi/launcher.rasi"), desc="Launch Rofi"),
+    Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"), desc="Launch Rofi"),
     Key([mod, shift], "e", lazy.spawn("" + home + "/.local/bin/power"), desc="Power Menu"),
     Key([mod, shift], "n", lazy.spawn("" + home + "/.local/bin/nmgui"), desc="Network Menu"),
     # focus, move windows and screens
