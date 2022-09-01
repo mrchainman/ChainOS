@@ -58,7 +58,7 @@ genfstab -U /mnt >> /mnt/etc/fstab &&
 printf "Generated fstab\n"
 cp -r /etc/skel /mnt/etc/ &&
 printf "Copied skeleton files into chroot\n"
-cp chroot-install.sh /mnt/root/ &&
+cp -r ../scripts /mnt/root/ &&
 cp -r ../packages /mnt/root/ &&
 cp -r ../loader /mnt/root/ &&
 printf "Copied scripts into chroot\n"

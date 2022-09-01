@@ -58,5 +58,6 @@ else
 	done < /etc/group
 fi
 echo "HOME=/home/$username" > /etc/env
-bootctl install || efibootmgr --create --disk /dev/sda --part 2 --loader "\EFI\systemd\systemd-bootx64.efi" --label "Linux Boot Manager" --verbose
+bootctl install
+cp -r ../loader /boot/
 ln -sf /usr/lib/systemd/system/sddm.service /etc/systemd/system/display-manager.service
