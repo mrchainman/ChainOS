@@ -1,3 +1,0 @@
-lamp|lampp|file
-spot|spotlight-dark.rasi|file
-pinen|pinentry-qt|file
