@@ -39,11 +39,15 @@ settings:
   tabs.show:
     global: always
   url.default_page:
-    global: http://localhost:8008/Homepage.html
+    global: https://metager.org
   url.searchengines:
     global:
       DEFAULT: https://metager.org/meta/meta.ger3?eingabe={}
+      aw: https://wiki.archlinux.org/index.php?search={}&title=Special%3ASearch&wprov=acrw1
+      gh: https://github.com/search?q={}
+      mg: https://metager.org/meta/meta.ger3?eingabe={}
+      st: https://stackoverflow.com/search?q={}&s=3a881e05-49e6-4459-9eac-b73f3ca6e9ce
   url.start_pages:
-    global: https://intern.zone35.de
+    global: https://metager.org
   window.transparent:
     global: true
