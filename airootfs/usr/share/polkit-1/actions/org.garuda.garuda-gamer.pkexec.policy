@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD polkit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/software/polkit/policyconfig-1.dtd">
+<policyconfig>
+
+  <vendor>garuda-gamer</vendor>
+  <vendor_url>https://gitlab.com/garuda-linux/applications/garuda-gamer</vendor_url>
+
+  <action id="org.garuda.garuda-gamer.pkexec.policy.run-root-terminal">
+    <description>Execute Garuda Assistant action</description>
+    <message>Authentication is required to install/remove the selected software</message>
+    <icon_name>garuda-gamer</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/garuda/scripts/garuda-gamer/rootshell.sh</annotate>
+  </action>
+
+</policyconfig>

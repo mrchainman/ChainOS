@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The FPrint Project</vendor>
+  <vendor_url>https://fprint.freedesktop.org/</vendor_url>
+  <icon_name>fprint</icon_name>
+  <action id="net.reactivated.fprint.device.verify">
+    <description>Verify a fingerprint</description>
+    <description xml:lang="zh_TW">驗證指紋</description>
+    <description xml:lang="zh_CN">验证指纹</description>
+    <description xml:lang="uk">Перевірити відбиток</description>
+    <description xml:lang="tr">Parmak izini doğrula</description>
+    <description xml:lang="sv">Verifiera fingeravtryck</description>
+    <description xml:lang="sr">Провери отисак прста</description>
+    <description xml:lang="sl">Overjanje prstnega odtisa</description>
+    <description xml:lang="sk">Overiť odtlačok prsta</description>
+    <description xml:lang="ru">Проверка отпечатков пальцев</description>
+    <description xml:lang="ro">Verifică o amprentă</description>
+    <description xml:lang="pt_BR">Verificar uma impressão digital</description>
+    <description xml:lang="pt">Verificar uma impressão digital</description>
+    <description xml:lang="pl">Weryfikowanie odcisków palców</description>
+    <description xml:lang="pa">ਉਂਗਲ-ਨਿਸ਼ਾਨ ਦੀ ਜਾਂਚ</description>
+    <description xml:lang="oc">Verificra una emprencha digitala</description>
+    <description xml:lang="nl">Verifieer een vingerafdruk</description>
+    <description xml:lang="mr">फिंगरप्रिंट सत्यापित करा</description>
+    <description xml:lang="lv">Pārbaudīt pirkstu nospiedumu</description>
+    <description xml:lang="ko">지문 검증</description>
+    <description xml:lang="ja">指紋の検証</description>
+    <description xml:lang="it">Verifica una impronta</description>
+    <description xml:lang="id">Periksa kebenaran sidik jari</description>
+    <description xml:lang="ia">Verificar un impression digital</description>
+    <description xml:lang="hu">Ujjlenyomat ellenőrzése</description>
+    <description xml:lang="hr">Provjeri otiske prstiju</description>
+    <description xml:lang="gl">Verificar a pegada dixital</description>
+    <description xml:lang="fur">Verifiche un impront digjitâl</description>
+    <description xml:lang="fr">Vérifier une empreinte digitale</description>
+    <description xml:lang="fo">Vátta eitt fingramerki</description>
+    <description xml:lang="fi">Vahvista sormenjälki</description>
+    <description xml:lang="es">Comprobar una huella</description>
+    <description xml:lang="eo">Kontroli fingrospuron</description>
+    <description xml:lang="en_GB">Verify a fingerprint</description>
+    <description xml:lang="el">Επιβεβαιώστε ένα δακτυλικό αποτύπωμα</description>
+    <description xml:lang="de">Einen Fingerabdruck überprüfen</description>
+    <description xml:lang="da">Verificer et fingeraftryk</description>
+    <description xml:lang="cs">Ověřit otisk prstů</description>
+    <description xml:lang="ca">Comprova una empremta</description>
+    <description xml:lang="bg">Проверка на отпечатък</description>
+    <description xml:lang="ar">أكّد البصمة</description>
+    <message>Privileges are required to verify fingerprints.</message>
+    <message xml:lang="zh_TW">需要有特權才能驗證指紋。</message>
+    <message xml:lang="zh_CN">验证指纹需要更高的权限。</message>
+    <message xml:lang="uk">Для перевірки відбитків пальців потрібні відповідні права доступу.</message>
+    <message xml:lang="tr">Parmak izini doğrulamak için ayrıcalıklar gerekiyor.</message>
+    <message xml:lang="sv">Privilegier krävs för att verifiera fingeravtryck.</message>
+    <message xml:lang="sr">Потребна су овлашћења за проверу отисака прстију.</message>
+    <message xml:lang="sl">Za overjanje prstnih odtisov so zahtevana skrbniška dovoljenja.</message>
+    <message xml:lang="sk">Na overenie odtlačkov prstov sú potrebné oprávnenia.</message>
+    <message xml:lang="ru">Для проверки отпечатков пальцев требуются права доступа.</message>
+    <message xml:lang="ro">Sunt necesare privilegii pentru a verifica amprentele.</message>
+    <message xml:lang="pt_BR">Privilégios são necessários para verificar impressões digitais.</message>
+    <message xml:lang="pt">São necessários privilégios para verificar impressões digitais.</message>
+    <message xml:lang="pl">Wymagane są uprawnienia, aby zweryfikować odciski palców.</message>
+    <message xml:lang="pa">ਉਂਗਲ-ਨਿਸ਼ਾਨ ਜਾਂਚ ਕਰਨ ਲਈ ਅਧਿਕਾਰਾਂ ਦੀ ਲੋੜ ਹੈ।</message>
+    <message xml:lang="oc">De permissions son necessaris per contrarotlar d'emprenchas digitalas.</message>
+    <message xml:lang="nl">U hebt rechten nodig om vingerafdrukken te verifiëren</message>
+    <message xml:lang="mr">फिंगरप्रिंट सत्यापित करण्यासाठी विशेषाधिकार आवश्यक आहेत.</message>
+    <message xml:lang="lv">Ir nepieciešamas privilēģijas, lai pārbaudītu pirkstu nospiedumus.</message>
+    <message xml:lang="ko">지문을 검증하려면 권한이 필요합니다.</message>
+    <message xml:lang="ja">指紋を検証するには特権が必要になります。</message>
+    <message xml:lang="it">Sono richiesti dei privilegi per verificare le impronte.</message>
+    <message xml:lang="id">Diperlukan hak khusus untuk memeriksa kebenaran sidik jari.</message>
+    <message xml:lang="ia">Privilegios es necesse pro verificar impressiones digital.</message>
+    <message xml:lang="hu">Jogosultság szükséges az ujjlenyomatok ellenőrzéséhez.</message>
+    <message xml:lang="hr">Potrebne su ovlasti za provjeru otisaka prstiju.</message>
+    <message xml:lang="gl">Requírense privilexios para verificar pegadas dixitais.</message>
+    <message xml:lang="fur">A son necessaris i privileçs par verificâ impronts digjitâi.</message>
+    <message xml:lang="fr">Des permissions sont nécessaires pour contrôler des empreintes digitales.</message>
+    <message xml:lang="fo">Serrættindi eru krøvd til at vátta fingramerki</message>
+    <message xml:lang="fi">Sormenjälkien tarkistamiseen tarvitaan oikeudet.</message>
+    <message xml:lang="es">Se necesitan privilegios para comprobar huellas.</message>
+    <message xml:lang="eo">Sistemprivilegioj estas bezonate por kontroli fingrospurojn.</message>
+    <message xml:lang="en_GB">Privileges are required to verify fingerprints.</message>
+    <message xml:lang="el">Απαιτούνται προνόμια για την επαλήθευση των δακτυλικών αποτυπωμάτων.</message>
+    <message xml:lang="de">Systemverwalterrechte sind zum Überprüfen neuer Fingerabdrücke erforderlich.</message>
+    <message xml:lang="da">Privilegier er krævet for at verificere fingeraftryk.</message>
+    <message xml:lang="cs">K ověření otisků prstů jsou zapotřebí oprávnění.</message>
+    <message xml:lang="ca">Es requereixen privilegis per verificar empremtes.</message>
+    <message xml:lang="bg">Необходими са допълнителни привилегии, за проверка на отпечатъци.</message>
+    <message xml:lang="ar">الصلاحيات مطلوبة لتأكيد البصمة.</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+  <action id="net.reactivated.fprint.device.enroll">
+    <description>Enroll or Delete fingerprints</description>
+    <description xml:lang="uk">Реєстрація або вилучення відбитків</description>
+    <description xml:lang="tr">Parmak izlerini kaydet veya sil</description>
+    <description xml:lang="sv">Registrera eller ta bort fingeravtryck</description>
+    <description xml:lang="pt_BR">Inscrever ou excluir impressões digitais</description>
+    <description xml:lang="pl">Pobieranie lub usuwanie odcisków palców</description>
+    <description xml:lang="ko">지문 등록 또는 삭제</description>
+    <description xml:lang="id">Mendaftar atau menghapus sidik jari</description>
+    <description xml:lang="fr">Introduire ou supprimer des empreintes</description>
+    <description xml:lang="fi">Rekisteröi tai poista sormenjälkiä</description>
+    <description xml:lang="de">Fingerabdrücke eintragen oder löschen</description>
+    <description xml:lang="cs">Registrovat nebo smazat nové otisky prstů</description>
+    <message>Privileges are required to enroll or delete fingerprints.</message>
+    <message xml:lang="uk">Для реєстрації або вилучення відбитків потрібні відповідні права доступу.</message>
+    <message xml:lang="tr">Parmak izlerini kaydetmek veya silmek için ayrıcalıklar gerekiyor.</message>
+    <message xml:lang="sv">Privilegier krävs för att registrera eller ta bort fingeravtryck.</message>
+    <message xml:lang="pt_BR">Privilégios são necessários para inscrever ou excluir impressões digitais.</message>
+    <message xml:lang="pl">Wymagane są uprawnienia, aby pobrać lub usunąć odciski palców.</message>
+    <message xml:lang="ko">지문을 등록하거나 삭제하려면 하려면 권한이 필요합니다.</message>
+    <message xml:lang="id">Diperlukan hak khusus untuk mendaftarkan atau menghapus sidik jari.</message>
+    <message xml:lang="fr">Des permissions sont nécessaires pour introduire ou supprimer des empreintes digitales.</message>
+    <message xml:lang="fi">Sormenjälkien rekisteröintiin tai poistoon tarvitaan oikeudet.</message>
+    <message xml:lang="de">Zum Eintragen oder Löschen von Fingerabdrücken sind Berechtigungen erforderlich.</message>
+    <message xml:lang="cs">K registraci nových nebo mazání stávajících otisků prstů jsou zapotřebí oprávnění.</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_self_keep</allow_active>
+    </defaults>
+  </action>
+  <action id="net.reactivated.fprint.device.setusername">
+    <description>Select a user to manage fingerprints for</description>
+    <description xml:lang="uk">Виберіть користувача для керування відбитками</description>
+    <description xml:lang="tr">Parmak izlerini yönetmek için bir kullanıcı seçin</description>
+    <description xml:lang="sv">Välj användare att hantera fingeravtryck för</description>
+    <description xml:lang="pt_BR">Selecione um usuário para gerenciar as impressões digitais</description>
+    <description xml:lang="pl">Wybór użytkownika, dla którego zarządzać odciskami palców</description>
+    <description xml:lang="ko">지문을 관리 할 사용자를 선택하세요</description>
+    <description xml:lang="id">Pilih pengguna yang akan dikelola sidik jarinya</description>
+    <description xml:lang="fr">Choisir un utilisateur pour l’administration des empreintes</description>
+    <description xml:lang="fi">Valitse käyttäjä, jonka sormenjälkiä hallinnoidaan</description>
+    <description xml:lang="de">Wählen Sie einen Benutzer zur Verwaltung der Fingerabdrücke für</description>
+    <description xml:lang="cs">Zvolte uživatele, u kterého spravovat otisky</description>
+    <message>Privileges are required to manage fingerprints for other users.</message>
+    <message xml:lang="uk">Для керування відбитками для інших користувачів потрібні відповідні права доступу.</message>
+    <message xml:lang="tr">Diğer kullanıcılar için parmak izlerini yönetmek için ayrıcalıklar gerekiyor.</message>
+    <message xml:lang="sv">Privilegier krävs för att hantera fingeravtryck för andra användare.</message>
+    <message xml:lang="pt_BR">Privilégios são necessários para gerenciar impressões digitais para outros usuários.</message>
+    <message xml:lang="pl">Wymagane są uprawnienia, aby zarządzać odciskami palców dla innych użytkowników.</message>
+    <message xml:lang="ko">다른 사용자를 위한 지문을 관리하려면 권한이 필요합니다.</message>
+    <message xml:lang="id">Diperlukan hak khusus untuk mengelola sidik jari bagi pengguna lain.</message>
+    <message xml:lang="fr">Des permissions sont nécessaires pour administrer des empreintes digitales pour le compte d’autres utilisateurs.</message>
+    <message xml:lang="fi">Muiden käyttäjien sormenjälkien hallinta edellyttää käyttöoikeuksia.</message>
+    <message xml:lang="de">Zur Verwaltung von Fingerabdrücken für andere Benutzer sind Berechtigungen erforderlich.</message>
+    <message xml:lang="cs">Pro správu otisků prstů ostatních uživatelů jsou zapotřebí oprávnění.</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>
