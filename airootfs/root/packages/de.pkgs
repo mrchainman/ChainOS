@@ -56,3 +56,5 @@ xorg-xsetroot
 xorg-xwayland
 xorg-xwininfo
 xsel
+gtk-engine-murrine
+gnome-themes-extra
