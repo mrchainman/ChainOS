@@ -30,7 +30,7 @@ cp airootfs/etc/hostname airootfs/etc/hostname.bak
 cat > airootfs/etc/hostname << EOF
 $hostname
 EOF
-echo $username > airootfs/etc/env
+echo HOME=/home/$username > airootfs/etc/env
 printf "Done, delete backupfiles? (y/n)\n"
 read del
 if [ $del = y ]
