@@ -10,17 +10,23 @@ The build is based on releng and build based on archiso , see https://wiki.archl
 
 There are to files, where you can specify the installed packages:
 - ./packages.x86_64 for the live environment
-- ./airootfs/etc/packages.x86_64 for the installed environment
+- ./airootfs/root/packages/ for the installed environment
+
+To easely replicate the installed envrionment in the live environment you can use the folloing command:
+
+cat airootfs/root/packages/* > packages.x86_64
 
 Everything you put under airootfs/ will be copied in to the Filesystem of the image, but NOT into the installed system!
-The userconfiguration resied in airootfs/etc/skel/ which is the only folder that will be copied over to the installed system.
+The userconfiguration resides in airootfs/etc/skel/
 
-Once in the liveenvironment you can call `bash install.sh` to start the installation process.
+To prepare for building just exeucte the setup.sh script
+
+Once in the liveenvironment you can call `cd scripts && bash install.sh` to start the installation process.
 
 **CAREFUL**
 
-Since this repo is tailored exactly to my needs, the script does NOT ask questions or ask for confirmation. It will completly wipe the Harddrive.
-Read it before executing!
+Since this repo is tailored exactly to my needs, the script does just ask a few questions, it does NOT ask for confirmation!!! It will completly wipe the Harddrive.
+Read it before executing!!!
 
 **Basic systeminfotmation:**
 - KR: linux-zen
@@ -32,6 +38,22 @@ Read it before executing!
 - TE: Kitty
 - CS: Catppuccin
 - PG: See files mentioned above
+
+**Tips and Tricks**
+
+All the config files are in ~/.config
+
+If you have questions about the "empty" homedir just look a the symlinks in the homedir and read ~/.config/bash/bash_exports
+
+Some useful scripts can be found under ~/.local/bin
+
+The two you will need for sure are:
+
+get-wp.sh which clones some wallpapers into ~/.data/Pictures/Wallpapers/images
+
+get-coc.sh which clones the coc config for nvim into ~/.config/coc
+
+There are also some user systemd units which can be found under ~/.local/share/systemd/user
 
 **CREDIT:**
 Most of the configuation for qtile and other programs are taken from https://github.com/dani-lp/dotfiles
