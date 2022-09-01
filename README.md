@@ -1,11 +1,15 @@
 **WORK IN PROGRESS**
 
 **NOW WORKING:**
+
 Live iso
+
 Install script is still WIP
 
 Welcome to ChainOS!
+
 This is my spin on an arch distro.
+
 It is tailored a lot to my personal needs, so I don't reccomend to use the ISO you find in this repo, but to build it yourself, by modifing everything as needed.
 
 **Usage:**
