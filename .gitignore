@@ -10,5 +10,8 @@ airootfs/etc/skel/.local/share/pass
 airootfs/etc/skel/.ssh
 airootfs/etc/skel/.config/isync
 airootfs/etc/skel/.config/msmtp
-airootfs/etc/skel/.config/vdirsyncer/config
-airootfs/etc/skel/.config/newsboat/config
+airootfs/etc/skel/.config/vdirsyncer
+airootfs/etc/skel/.config/newsboat
+airootfs/etc/skel/.config/mutt
+airootfs/etc/skel/.config/gotify-dunst
+airootfs/etc/skel/.config/zabbixmon
