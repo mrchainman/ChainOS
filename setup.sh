@@ -1,25 +1,41 @@
 #!/bin/bash
-# Create user root and chain
+printf "Please choose the username for the live environment:\n"
+read username
+printf "Please choose the hostname for the live environment:\n"
+read hostname
+printf "Please choose the password for the live environment:\n"
+read pass
+
+passhash=$(openssl passwd -6 $pass)
 cp airootfs/etc/passwd airootfs/etc/passwd.bak
 cat > airootfs/etc/passwd << EOF
 root:x:0:0:root:/root:/bin/bash
-chain:x:1000:1000:chain:/home/chain:/bin/bash
+$username:x:1000:1000:$username:/home/$username:/bin/bash
 EOF
 # Specify groups
 cp airootfs/etc/group airootfs/etc/group.bak
 cat > airootfs/etc/group << EOF
 root:x:0:root
-chain:x:1000:chain
-wheel:x:998:chain
+$username:x:1000:$username
+wheel:x:998:$username
 EOF
-# SEt password for chain and root to chain
+# SEt password for username and root to username
 cp airootfs/etc/shadow airootfs/etc/shadow.bak
 cat > airootfs/etc/shadow << EOF
-root:$6$ko1AGgKtojvbNO63$1b5PVO0GtCU7bsUO6T6EEyRqmMEmLM4PbldV1uI6gA83Fyzr6K3.9Sv5GIBUvIx.YG6BPO8wMypdYwLkz46nd1:14871::::::
-davidc:$6$ko1AGgKtojvbNO63$1b5PVO0GtCU7bsUO6T6EEyRqmMEmLM4PbldV1uI6gA83Fyzr6K3.9Sv5GIBUvIx.YG6BPO8wMypdYwLkz46nd1:19146:0:99999:7:::
+root:$passhash:14871::::::
+$username:$passhash:19146:0:99999:7:::
 EOF
 # Set hostname
 cp airootfs/etc/hostname airootfs/etc/hostname.bak
 cat > airootfs/etc/hostname << EOF
-chainos
+$hostname
 EOF
+echo $username > airootfs/etc/env
+printf "Done, delete backupfiles? (y/n)\n"
+read del
+if [ $del = y ]
+then
+	rm airootfs/etc/*.bak
+else
+	exit 0
+fi

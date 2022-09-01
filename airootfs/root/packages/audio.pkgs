@@ -1,0 +1,15 @@
+alsa-firmware
+alsa-oss
+alsa-plugins
+alsa-support
+alsa-tools
+alsa-utils
+ardour-git
+carla
+guitarix
+jack-support
+jamesdsp
+pipewire-jack
+pipewire-support
+playerctl
+pulsemixer
