@@ -114,6 +114,7 @@ gcc
 gcc-libs
 gettext
 git
+gksu
 glibc
 gnome-epub-thumbnailer
 gnu-netcat
