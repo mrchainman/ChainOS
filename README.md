@@ -1,5 +1,9 @@
 **WORK IN PROGRESS**
 
+**NOW WORKING:**
+Live iso
+Install script is still WIP
+
 Welcome to ChainOS!
 This is my spin on an arch distro.
 It is tailored a lot to my personal needs, so I don't reccomend to use the ISO you find in this repo, but to build it yourself, by modifing everything as needed.
@@ -7,6 +11,10 @@ It is tailored a lot to my personal needs, so I don't reccomend to use the ISO y
 **Usage:**
 
 The build is based on releng and build based on archiso , see https://wiki.archlinux.org/title/Archiso#Installation
+
+Dependencies:
+
+archiso
 
 There are to files, where you can specify the installed packages:
 - ./packages.x86_64 for the live environment
@@ -20,6 +28,16 @@ Everything you put under airootfs/ will be copied in to the Filesystem of the im
 The userconfiguration resides in airootfs/etc/skel/
 
 To prepare for building just exeucte the setup.sh script
+
+To build run
+
+sudo mkarchiso -v -o ~/ ./
+
+You will find the iso in your homedir
+
+to test it with quemu:
+
+run_archiso -u -i ~/<iso-name>
 
 Once in the liveenvironment you can call `cd scripts && bash install.sh` to start the installation process.
 
