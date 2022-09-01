@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=System;Garuda-Setup;
+Comment[en_US]=Create, delete and restore Snapper snapshots
+Comment=Create, delete and restore Snapper snapshots
+Encoding=UTF-8
+Exec=snapper-tools
+GenericName[en_US]=
+GenericName=
+Icon=ksnapshot
+MimeType=
+Name[en_US]=Snapper Tools
+Name=Snapper Tools
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

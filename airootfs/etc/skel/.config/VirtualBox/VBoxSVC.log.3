@@ -1,0 +1,50 @@
+00:00:00.016763 main     VirtualBox XPCOM Server 6.1.34 r150636 linux.amd64 (Apr 21 2022 20:04:42) release log
+00:00:00.016766 main     Log opened 2022-05-20T07:26:42.342676000Z
+00:00:00.016766 main     Build Type: release
+00:00:00.016770 main     OS Product: Linux
+00:00:00.016770 main     OS Release: 5.17.7-zen1-1-zen
+00:00:00.016771 main     OS Version: #1 ZEN SMP PREEMPT Thu, 12 May 2022 18:55:52 +0000
+00:00:00.016799 main     DMI Product Name: 20YG003VGE
+00:00:00.016805 main     DMI Product Version: ThinkPad E15 Gen 3
+00:00:00.016811 main     Firmware type: UEFI
+00:00:00.017060 main     Secure Boot: Disabled
+00:00:00.017109 main     Host RAM: 14872MB (14.5GB) total, 13297MB (12.9GB) available
+00:00:00.017112 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.017112 main     Process ID: 2827
+00:00:00.017113 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.020440 main     IPC socket path: /tmp/.vbox-davidc-ipc/ipcd
+00:00:00.130812 nspr-2   VirtualBox: object creation starts
+00:00:00.130930 nspr-2   Home directory: '/home/davidc/.config/VirtualBox'
+00:00:00.131191 nspr-2   Loading settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.134722 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.140289 nspr-2   Failed to retrive disk info: getDiskName(/dev/mapper/luks-e4c42db2-e2be-4751-99b4-19589c00489a) --> luks-e4c42db2-e2be-4751-99b4-19589c00489a
+00:00:00.163458 nspr-2   HostDnsMonitor: initializing
+00:00:00.163723 nspr-2   NAT: resolv.conf: nameserver 192.168.1.31
+00:00:00.163737 nspr-2   HostDnsMonitor: updating information
+00:00:00.163746 nspr-2   HostDnsMonitor: old information
+00:00:00.163748 nspr-2     no server entries
+00:00:00.163750 nspr-2     no domain set
+00:00:00.163752 nspr-2     no search string entries
+00:00:00.163754 nspr-2   HostDnsMonitor: new information
+00:00:00.163755 nspr-2     server 1: 192.168.1.31
+00:00:00.163758 nspr-2     domain: zone35.zz
+00:00:00.163759 nspr-2     search string 1: zone35.zz
+00:00:00.180334 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.186932 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64.vbox" with version "1.16-linux"
+00:00:00.189043 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/Hell_4/Hell_4.vbox" with version "1.14-linux"
+00:00:00.190579 nspr-2   OCI: Local config file '/home/davidc/.config/VirtualBox/oci_config' does not exist
+00:00:00.190651 nspr-2   OCI: Original config file '/home/davidc/.oci/config' does not exist
+00:00:00.190655 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.190665 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.190684 nspr-2   VirtualBox: object created
+07:33:26.989374 nspr-3   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+07:33:27.011153 nspr-3   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+07:33:27.016180 nspr-3   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+07:33:32.538061 main     VirtualBox: object deletion starts
+07:33:32.538263 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64-disk001.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+07:33:32.538958 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/Hell_4/Hellv4-disk1.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+07:33:32.553796 main     HostDnsMonitor: shutting down ...
+07:33:32.554175 main     HostDnsMonitor: shut down
+07:33:32.976703 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+07:33:37.559289 main     {00007fccbc01d570} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+07:33:37.567504 main     VirtualBox: object deleted

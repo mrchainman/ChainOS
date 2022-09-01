@@ -1,0 +1,50 @@
+00:00:00.004173 main     VirtualBox XPCOM Server 6.1.34 r150636 linux.amd64 (Apr 21 2022 20:04:42) release log
+00:00:00.004177 main     Log opened 2022-05-18T07:16:19.323935000Z
+00:00:00.004178 main     Build Type: release
+00:00:00.004182 main     OS Product: Linux
+00:00:00.004182 main     OS Release: 5.17.7-zen1-1-zen
+00:00:00.004183 main     OS Version: #1 ZEN SMP PREEMPT Thu, 12 May 2022 18:55:52 +0000
+00:00:00.004223 main     DMI Product Name: 20YG003VGE
+00:00:00.004230 main     DMI Product Version: ThinkPad E15 Gen 3
+00:00:00.004238 main     Firmware type: UEFI
+00:00:00.004679 main     Secure Boot: Disabled
+00:00:00.004761 main     Host RAM: 14872MB (14.5GB) total, 13535MB (13.2GB) available
+00:00:00.004764 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.004764 main     Process ID: 2788
+00:00:00.004765 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.008141 main     IPC socket path: /tmp/.vbox-davidc-ipc/ipcd
+00:00:00.114189 nspr-2   VirtualBox: object creation starts
+00:00:00.114263 nspr-2   Home directory: '/home/davidc/.config/VirtualBox'
+00:00:00.114421 nspr-2   Loading settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.117018 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.119987 nspr-2   Failed to retrive disk info: getDiskName(/dev/mapper/luks-e4c42db2-e2be-4751-99b4-19589c00489a) --> luks-e4c42db2-e2be-4751-99b4-19589c00489a
+00:00:00.129934 nspr-2   HostDnsMonitor: initializing
+00:00:00.130157 nspr-2   NAT: resolv.conf: nameserver 192.168.1.31
+00:00:00.130181 nspr-2   HostDnsMonitor: updating information
+00:00:00.130203 nspr-2   HostDnsMonitor: old information
+00:00:00.130206 nspr-2     no server entries
+00:00:00.130209 nspr-2     no domain set
+00:00:00.130212 nspr-2     no search string entries
+00:00:00.130215 nspr-2   HostDnsMonitor: new information
+00:00:00.130217 nspr-2     server 1: 192.168.1.31
+00:00:00.130220 nspr-2     domain: zone35.zz
+00:00:00.130222 nspr-2     search string 1: zone35.zz
+00:00:00.172271 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.179280 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64.vbox" with version "1.16-linux"
+00:00:00.180245 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/Hell_4/Hell_4.vbox" with version "1.14-linux"
+00:00:00.181876 nspr-2   OCI: Local config file '/home/davidc/.config/VirtualBox/oci_config' does not exist
+00:00:00.181915 nspr-2   OCI: Original config file '/home/davidc/.oci/config' does not exist
+00:00:00.181919 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.181925 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.181943 nspr-2   VirtualBox: object created
+04:04:16.833287 USBPROXY USBProxyBackendLinux: Device 04b4:521a (sysfs:/sys/devices/pci0000:00/0000:00:08.1/0000:04:00.3/usb1/1-1/1-1.3/1-1.3.3/1-1.3.3.1//device:/dev/vboxusb/001/012) isn't accessible. giving udev a few seconds to fix this...
+09:34:17.561283 nspr-2   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+09:34:17.577324 nspr-2   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+09:34:17.581112 nspr-3   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+09:34:23.098467 main     VirtualBox: object deletion starts
+09:34:23.098631 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64-disk001.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+09:34:23.099613 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/Hell_4/Hellv4-disk1.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+09:34:23.106552 main     HostDnsMonitor: shutting down ...
+09:34:23.110192 main     HostDnsMonitor: shut down
+09:34:23.363487 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+09:34:26.494766 main     VirtualBox: object deleted

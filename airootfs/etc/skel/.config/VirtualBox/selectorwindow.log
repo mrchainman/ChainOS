@@ -1,0 +1,35 @@
+00:00:00.698167 VirtualBox GUI VM Selector Window 6.1.36 r152435 linux.amd64 (Jul 21 2022 10:08:57) release log
+00:00:00.698169 Log opened 2022-08-30T18:47:11.160024000Z
+00:00:00.698170 Build Type: release
+00:00:00.698172 OS Product: Linux
+00:00:00.698174 OS Release: 5.19.4-zen1-1-zen
+00:00:00.698175 OS Version: #1 ZEN SMP PREEMPT_DYNAMIC Thu, 25 Aug 2022 17:31:19 +0000
+00:00:00.698194 DMI Product Name: Vostro 3250  
+00:00:00.698203 DMI Product Version: X00
+00:00:00.698207 Firmware type: UEFI
+00:00:00.698414 Secure Boot: Disabled
+00:00:00.698448 Host RAM: 7852MB (7.6GB) total, 4256MB (4.1GB) available
+00:00:00.698450 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.698451 Process ID: 836072
+00:00:00.698451 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.698485 Qt version: 5.15.5
+00:00:00.743056 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.303797 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:05.415746 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 0, work area: 0x0 x 1680x1050
+00:00:05.415770 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1680x1050
+00:01:02.384704 GUI: UIMediumEnumerator: Medium with key={{930e55d9-8193-4b55-8028-885fc7439d39}} created
+00:01:02.567027 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:21.335242 GUI: UIMediumEnumerator: Medium with key={{1bebf4e7-6543-46f5-8fb1-359592da64eb}} created
+00:07:21.377060 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:46.432940 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:46.446671 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:08:10.534605 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:15:41.480207 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:15:41.513701 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:15:57.630532 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:27:54.081892 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:27:54.156597 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:28:44.889729 GUI: UIMediumEnumerator: Medium with key={{c699ea2c-b698-4006-84d3-a76a732eff62}} created
+00:28:44.915811 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:28:56.193870 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:28:56.208548 GUI: UIMediumEnumerator: Medium-enumeration finished!

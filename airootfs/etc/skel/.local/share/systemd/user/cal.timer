@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync calendar every 5m
+Requires=cal.service
+
+[Timer]
+Unit=cal.service
+OnUnitInactiveSec=5m
+RandomizedDelaySec=5m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

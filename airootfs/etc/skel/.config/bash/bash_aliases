@@ -1,0 +1,55 @@
+# Aliases
+alias reload="source ~/.bashrc"
+alias ls="ls -l -h --color=auto --group-directories-first "
+alias dir='dir --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias grep='grep --color=auto'
+alias grubup="sudo update-grub"
+alias hw='hwinfo --short'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem='ps auxf | sort -nr -k 4'
+alias rmpkg="sudo pacman -Rdd"
+alias tarnow='tar -acf '
+alias untar='tar -zxvf '
+alias upd='/usr/bin/update'
+alias vdir='vdir --color=auto'
+alias wget='wget -c '
+
+# Help people new to Arch
+alias apt-get='man pacman'
+alias apt='man pacman'
+alias helpme='cht.sh --shell'
+alias please='sudo'
+alias tb='nc termbin.com 9999'
+
+# Cleanup orphaned packages
+alias cleanup='sudo pacman -Rns `pacman -Qtdq`'
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# Recent installed packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+
+# Customs
+alias gls="git ls-files"
+alias gst="git status -uno"
+alias se="sudo nvim "
+alias sp="sudo pacman "
+alias ss="sudo systemctl "
+alias sj="sudo journalctl "
+alias us="systemctl --user "
+alias uj="journalctl --user "
+alias se="sudo nvim "
+alias op="netstat -tulpn "
+alias pps="ps aux | grep "
+alias dc="docker-compose "
+alias esc="setxkbmap -option caps:escape"
+alias dps="docker ps --format=\"Name: {{.Names}}\nStatus: {{.Status}}\""
+alias sshb="ssh -fNT "
+alias sshe="ssh -TO exit "
+alias sshc="ssh -TO check "
+alias add-keys='cd ~/.ssh && ssh-add $(/bin/ls ~/.ssh | grep -Ev "pub|mux|conf|known")'
+alias wip="dig +short myip.opendns.com @resolver1.opendns.com"

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.23.0",
+    "coc-css": ">=1.3.0",
+    "coc-go": ">=1.3.0",
+    "coc-html": ">=1.6.1",
+    "coc-java": ">=1.5.5",
+    "coc-json": ">=1.4.2",
+    "coc-markdownlint": ">=1.12.5",
+    "coc-phpls": ">=2.2.2",
+    "coc-pyright": ">=1.1.262",
+    "coc-sh": ">=0.7.0",
+    "coc-tsserver": ">=1.10.5",
+    "coc-xml": ">=1.14.1",
+    "coc-yaml": ">=1.7.5"
+  }
+}

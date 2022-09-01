@@ -1,0 +1,28 @@
+00:00:01.002261 VirtualBox GUI VM Selector Window 6.1.34 r150636 linux.amd64 (Apr 21 2022 20:04:42) release log
+00:00:01.002263 Log opened 2022-05-18T07:16:19.616377000Z
+00:00:01.002263 Build Type: release
+00:00:01.002265 OS Product: Linux
+00:00:01.002266 OS Release: 5.17.7-zen1-1-zen
+00:00:01.002266 OS Version: #1 ZEN SMP PREEMPT Thu, 12 May 2022 18:55:52 +0000
+00:00:01.002287 DMI Product Name: 20YG003VGE
+00:00:01.002292 DMI Product Version: ThinkPad E15 Gen 3
+00:00:01.002295 Firmware type: UEFI
+00:00:01.002538 Secure Boot: Disabled
+00:00:01.002571 Host RAM: 14872MB (14.5GB) total, 13398MB (13.0GB) available
+00:00:01.002573 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:01.002574 Process ID: 2367
+00:00:01.002574 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:01.003046 Qt version: 5.15.4
+00:00:01.012281 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.584685 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1920x1080
+00:00:01.589703 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 1920x0 x 1920x1080
+00:00:01.595909 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 2 work area is actually resized to: 3840x0 x 1920x1200
+00:00:01.613600 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:09.718555 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenWorkAreaResized: Screen 0 work area is formally resized to: 1920x30 x 1920x1050
+00:00:09.725615 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenWorkAreaResized: Screen 1 work area is formally resized to: 0x30 x 1920x1050
+00:00:09.732176 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenWorkAreaResized: Screen 2 work area is formally resized to: 3840x30 x 1920x1170
+00:00:09.749282 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1920x30 x 1920x1050
+00:00:09.768139 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 0x0 x 1920x1080
+00:00:09.789670 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 2 work area is actually resized to: 3840x0 x 1920x1200
+09:34:18.218606 GUI: UICommon::sltHandleCommitDataRequest: Emergency shutdown initiated
+09:34:18.224731 Log rotated - Log started 2022-05-18T07:16:19.616377000Z

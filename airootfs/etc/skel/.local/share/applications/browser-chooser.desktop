@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+TryExec=browser-chooser.sh %U
+Exec=browser-chooser.sh %U
+Icon=Alacritty
+Terminal=false
+Categories=System;Browser;
+
+Name=Browser-Chooser
+GenericName=Browser-Chooser
+Comment=A script to choose a browser
+
+X-Desktop-File-Install-Version=0.26
+

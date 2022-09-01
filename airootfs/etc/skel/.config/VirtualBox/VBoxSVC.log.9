@@ -1,0 +1,51 @@
+00:00:00.124045 main     VirtualBox XPCOM Server 6.1.34 r150636 linux.amd64 (Apr 21 2022 20:04:42) release log
+00:00:00.124052 main     Log opened 2022-05-11T17:15:37.035442000Z
+00:00:00.124053 main     Build Type: release
+00:00:00.124057 main     OS Product: Linux
+00:00:00.124058 main     OS Release: 5.17.5-zen1-2-zen
+00:00:00.124059 main     OS Version: #1 ZEN SMP PREEMPT Fri, 06 May 2022 20:31:25 +0000
+00:00:00.124145 main     DMI Product Name: 20YG003VGE
+00:00:00.124172 main     DMI Product Version: ThinkPad E15 Gen 3
+00:00:00.124185 main     Firmware type: UEFI
+00:00:00.124557 main     Secure Boot: Disabled
+00:00:00.124624 main     Host RAM: 14872MB (14.5GB) total, 12842MB (12.5GB) available
+00:00:00.124627 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.124627 main     Process ID: 2801
+00:00:00.124627 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.127289 main     IPC socket path: /tmp/.vbox-davidc-ipc/ipcd
+00:00:00.238817 nspr-2   VirtualBox: object creation starts
+00:00:00.238934 nspr-2   Home directory: '/home/davidc/.config/VirtualBox'
+00:00:00.239213 nspr-2   Loading settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+00:00:00.240993 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.458765 nspr-2   Failed to retrive disk info: getDiskName(/dev/mapper/luks-e4c42db2-e2be-4751-99b4-19589c00489a) --> luks-e4c42db2-e2be-4751-99b4-19589c00489a
+00:00:00.473784 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.474779 nspr-2   HostDnsMonitor: initializing
+00:00:00.475003 nspr-2   NAT: resolv.conf: nameserver 192.168.1.1
+00:00:00.475031 nspr-2   HostDnsMonitor: updating information
+00:00:00.475053 nspr-2   HostDnsMonitor: old information
+00:00:00.475055 nspr-2     no server entries
+00:00:00.475058 nspr-2     no domain set
+00:00:00.475061 nspr-2     no search string entries
+00:00:00.475063 nspr-2   HostDnsMonitor: new information
+00:00:00.475065 nspr-2     server 1: 192.168.1.1
+00:00:00.475069 nspr-2     domain: lan
+00:00:00.475071 nspr-2     search string 1: lan
+00:00:00.561751 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.567824 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64.vbox" with version "1.16-linux"
+00:00:00.568857 nspr-2   Loading settings file "/home/davidc/VirtualBox VMs/Hell_4/Hell_4.vbox" with version "1.14-linux"
+00:00:00.569906 nspr-2   OCI: Local config file '/home/davidc/.config/VirtualBox/oci_config' does not exist
+00:00:00.569923 nspr-2   OCI: Original config file '/home/davidc/.oci/config' does not exist
+00:00:00.569926 nspr-2   OCI: Reading profiles finished with status NS_OK
+00:00:00.569932 nspr-2   ExtPack: Created cloud provider 'OCI' (hrc=NS_OK)
+00:00:00.569942 nspr-2   VirtualBox: object created
+02:39:24.321169 nspr-4   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+02:39:24.356407 nspr-3   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+02:39:24.360763 nspr-5   Saving settings file "/home/davidc/.config/VirtualBox/VirtualBox.xml" with version "1.14-linux"
+02:39:29.877593 main     VirtualBox: object deletion starts
+02:39:29.877681 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/kali-linux-2022.1-virtualbox-amd64/kali-linux-2022.1-virtualbox-amd64-disk001.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+02:39:29.878152 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/davidc/VirtualBox VMs/Hell_4/Hellv4-disk1.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+02:39:29.888179 main     HostDnsMonitor: shutting down ...
+02:39:29.889486 main     HostDnsMonitor: shut down
+02:39:29.955114 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+02:39:34.891714 main     {00007fb400019ba0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+02:39:34.893708 main     VirtualBox: object deleted

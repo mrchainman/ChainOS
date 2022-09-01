@@ -1,0 +1,8 @@
+[Unit]
+Description=Sync calendar
+Wants=cal.timer
+[Service]
+EnvironmentFile=/etc/env
+ExecStart=/bin/bash ${HOME}/.local/bin/calsync.sh
+[Install]
+WantedBy=multi-user.target

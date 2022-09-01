@@ -1,0 +1,14 @@
+[database]
+path=/home/davidc/.local/share/mail
+[user]
+name=david.cimadom
+primary_email=david.cimadom@zone35.de
+[new]
+tags=unread;inbox;
+ignore=.mbsyncstate;.uidvalidity
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg

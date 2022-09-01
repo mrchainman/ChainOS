@@ -1,0 +1,11 @@
+# ~/.config/systemd/user/
+
+[Unit]
+Description=Kwallpaper Switcher
+
+[Service]
+Environment="DISPLAY=:0"
+ExecStart=/home/davidc/.local/bin/kwallpaper.py -d /home/davidc/Pictures/Wallpapers/images/ -t 30
+
+[Install]
+WantedBy=default.target

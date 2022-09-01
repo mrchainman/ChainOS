@@ -1,0 +1,12 @@
+[Unit]
+Description=Change Wallpaper every 15m
+Requires=wallpaper.service
+
+[Timer]
+Unit=wallpaper.service
+OnUnitInactiveSec=15m
+RandomizedDelaySec=15m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

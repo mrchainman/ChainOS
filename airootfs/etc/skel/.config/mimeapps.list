@@ -1,0 +1,11 @@
+[Default Applications]
+text/plain=browser-chooser.desktop
+text/markdown=browser-chooser.desktop
+text/html=browser-chooser.desktop
+x-scheme-handler/geo=browser-chooser.desktop
+x-scheme-handler/http=browser-chooser.desktop
+x-scheme-handler/https=browser-chooser.desktop
+x-scheme-handler/jitsi-meet=browser-chooser.desktop
+x-scheme-handler/tel=linphone.desktop
+x-scheme-handler/etcher=balena-etcher-electron.desktop
+

@@ -1,0 +1,866 @@
+!SESSION 2022-07-25 10:00:54.204 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.2
+java.vendor=N/A
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.528
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.651
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.690
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.692
+!MESSAGE Initializing Java Language Server 1.14.0.202207211651
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.695
+!MESSAGE No workspace folders or root uri was defined. Falling back on /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.739
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.740
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.744
+!MESSAGE Wait for AutoBuildOffJob start
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.756
+!MESSAGE Wait for AutoBuildOffJob end 12ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.756
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.757
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.757
+!MESSAGE ProjectRegistryRefreshJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.758
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:55.785
+!MESSAGE Started org.eclipse.buildship.core 27ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.312
+!MESSAGE LoadingGradleVersionJob finished 527ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.327
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.339
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.390
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.838
+!MESSAGE Workspace initialized in 524ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.895
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.897
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:56.908
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:57.070
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:57.074
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:57.077
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:00:57.081
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:57.894
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:57.897
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.189
+!MESSAGE Updated workspace folders in 292 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.196
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.360
+!MESSAGE Updated workspace folders in 163 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.361
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.376
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:01:58.388
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.153
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.155
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.503
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.549
+!MESSAGE Updated workspace folders in 394 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.553
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+z35Java: /home/davidc/Development/assistodockerstack/java-chatserver
+  resolved classpath:
+  /z35Java/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+  /z35Java/libs/mysql-connector-java-5.0.4-bin.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.763
+!MESSAGE Updated workspace folders in 189 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:28.779
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+z35Java: /home/davidc/Development/assistodockerstack/java-chatserver
+  resolved classpath:
+  /z35Java/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+  /z35Java/libs/mysql-connector-java-5.0.4-bin.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:29.635
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:29.636
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:02:29.648
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.472
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.473
+!MESSAGE >> java/didChangeWorkspaceFolders
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.532
+!MESSAGE Updated workspace folders in 59 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.534
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+z35Java: /home/davidc/Development/assistodockerstack/java-chatserver
+  resolved classpath:
+  /z35Java/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+  /z35Java/libs/mysql-connector-java-5.0.4-bin.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.566
+!MESSAGE Updated workspace folders in 29 ms: Added 1 folder(s), removed0 folders.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.568
+!MESSAGE Projects:
+jdt.ls-java-project: /home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_0518508df376dd6da0027f72497ea890/jdt.ls-java-project
+  resolved classpath:
+  /jdt.ls-java-project/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+z35Java: /home/davidc/Development/assistodockerstack/java-chatserver
+  resolved classpath:
+  /z35Java/src
+  org.eclipse.jdt.launching.JRE_CONTAINER
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+    /usr/lib/jvm/java-18-openjdk/lib/jrt-fs.jar
+  /z35Java/libs/mysql-connector-java-5.0.4-bin.jar
+Java Runtimes:
+  default: /usr/lib/jvm/java-18-openjdk  CDC 1.0, Foundation 1.0: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.0: /usr/lib/jvm/java-18-openjdk
+  CDC 1.1, Foundation 1.1: /usr/lib/jvm/java-18-openjdk
+  Java Runtime Environment 1.1: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.1: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.2: /usr/lib/jvm/java-18-openjdk
+  Minimum environment to run the OSGi framework 1.2: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.3: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 1.4: /usr/lib/jvm/java-18-openjdk
+  Java 2 Platform, Standard Edition 5.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 6.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 7.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 8.0: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 9: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 10: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 11: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 12: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 13: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 14: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 15: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 16: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 17: /usr/lib/jvm/java-18-openjdk
+  Java Platform, Standard Edition 18: /usr/lib/jvm/java-18-openjdk
+
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.594
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-07-25 10:44:57.606
+!MESSAGE >> registerWatchers'

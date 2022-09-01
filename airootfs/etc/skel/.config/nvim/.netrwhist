@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/mrc/.config/fish'
+let g:netrw_dirhist_5='/home/johndoe/.config/nvim'
+let g:netrw_dirhist_4='/home/johndoe/.config'
+let g:netrw_dirhist_3='/home/johndoe'
+let g:netrw_dirhist_2='/home/johndoe/.config/nvim'
+let g:netrw_dirhist_1='/home/johndoe/.config'
+let g:netrw_dirhist_0='/home/johndoe'
+let g:netrw_dirhist_9='/home/johndoe/.config/nvim'
+let g:netrw_dirhist_8='/home/johndoe/.config'
+let g:netrw_dirhist_7='/home/johndoe'

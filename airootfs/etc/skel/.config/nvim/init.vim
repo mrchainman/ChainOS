@@ -1,0 +1,9 @@
+source ~/.config/nvim/customs/plugconf.vim
+source ~/.config/nvim/customs/basic.vim
+source ~/.config/nvim/customs/files.vim
+source ~/.config/nvim/customs/coc.vim
+source ~/.config/nvim/customs/compilation.vim
+source ~/.config/nvim/customs/git.vim
+source ~/.config/nvim/customs/nav.vim
+source ~/.config/nvim/customs/snippets.vim
+source ~/.config/nvim/customs/start.vim

@@ -1,0 +1,8 @@
+[Unit]
+Description=Change the wallpaper on timer activation
+Wants=wallpaper.timer
+[Service]
+EnvironmentFile=/etc/env
+ExecStart=/bin/bash ${HOME}/.local/bin/wallpaper.sh
+[Install]
+WantedBy=multi-user.target

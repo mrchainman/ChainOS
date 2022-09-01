@@ -1,0 +1,11 @@
+[core]
+	autocrlf = input
+[user]
+	email = david.cimadom@zone35.de
+	name = David Cimadom
+[difftool]
+    prompt = true
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/davidc/.config/coc/extensions/coc-java-data/jdt_ws_a192cf591af58e0f25e7fb64f685048a/.metadata/.plugins/org.eclipse.jdt.core
+1435254930.index
+988348023.index
+3842426239.index
+405796083.index

@@ -1,0 +1,12 @@
+[Unit]
+Description=Check for upcoming events every 5m
+Requires=alarm.service
+
+[Timer]
+Unit=alarm.service
+OnUnitInactiveSec=5m
+RandomizedDelaySec=5m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

@@ -4,4 +4,5 @@ airootfs/etc/shadow
 airootfs/etc/group
 airootfs/etc/skel/.local/share/gnupg
 airootfs/etc/skel/.local/share/pass
+airootfs/etc/skel/.ssh
 

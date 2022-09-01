@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync mail every 1m
+Requires=mail.service
+
+[Timer]
+Unit=mail.service
+OnUnitInactiveSec=1m
+RandomizedDelaySec=1m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

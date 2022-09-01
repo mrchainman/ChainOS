@@ -1,0 +1,38 @@
+# vim: filetype=neomuttrc
+# muttrc file for account david.cimadom@zone35.de
+set realname = "david.cimadom"
+set from = "david.cimadom@zone35.de"
+set sendmail = "msmtp -a david.cimadom@zone35.de"
+alias me david.cimadom <david.cimadom@zone35.de>
+set folder = "/home/davidc/.local/share/mail/david.cimadom@zone35.de"
+set header_cache = /home/davidc/.cache/mutt-wizard/david.cimadom@zone35.de/headers
+set message_cachedir = /home/davidc/.cache/mutt-wizard/david.cimadom@zone35.de/bodies
+set mbox_type = Maildir
+set hostname = "zone35.de"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+set pgp_sign_as=0x3ED3719BCC702FBD
+set signature="$HOME/Templates/signature.txt"
+set editor = "nvim"
+
+macro index o "<shell-escape>mw -y david.cimadom@zone35.de<enter>" "run mbsync to sync david.cimadom@zone35.de"
+macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a david.cimadom@zone35.de<enter>"  "publish GPG key to WKS provider"
+macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a david.cimadom@zone35.de<enter>" "confirm GPG publication"
+
+mailboxes "=_TODO" "=Dienstleister" "=Drafts" "=Trash" "=Sent" "=Junk" "=Noc" "=PMMCLI" "=Unsent Messages" "=INBOX" "=Privat" "=Teamwork" "=Unsent" "=VerteilerAlle" "=zabbix" "=Kollegen" "=Kunden"
+
+macro index,pager gt "<change-folder>=Teamwork<enter>"
+macro index,pager Mt ";<save-message>=Teamwork<enter>"
+macro index,pager Ct ";<copy-message>=Teamwork<enter>"
+macro index,pager gn "<change-folder>=Noc<enter>"
+macro index,pager Mn ";<save-message>=Noc<enter>"
+macro index,pager Cn ";<copy-message>=Noc<enter>"
+macro index,pager gz "<change-folder>=zabbix<enter>"
+macro index,pager Mz ";<save-message>=zabbix<enter>"
+macro index,pager Cz ";<copy-message>=zabbix<enter>"
+macro index,pager gv "<change-folder>=Verteiler\ Alle<enter>"
+macro index,pager Mv ";<save-message>=Verteiler\ Alle<enter>"
+macro index,pager Cv ";<copy-message>=Verteiler\ Alle<enter>"
