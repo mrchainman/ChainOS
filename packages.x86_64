@@ -473,7 +473,6 @@ sqlmap
 squashfs-tools
 squashfuse
 sshfs
-starship
 sudo
 syslinux
 systemd
