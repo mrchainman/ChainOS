@@ -1,5 +1,6 @@
 #!/bin/bash
 export PATH="/home/davidc/.local/bin:$PATH"
+/usr/lib/xfce-polkit/xfce-polkit &
 bg.sh &
 picom -b &
 eww daemon &
