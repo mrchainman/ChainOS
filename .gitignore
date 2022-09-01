@@ -7,3 +7,5 @@ airootfs/etc/skel/.local/share/pass
 airootfs/etc/skel/.ssh
 airootfs/etc/skel/.config/isync
 airootfs/etc/skel/.config/msmtp
+airootfs/etc/skel/.config/vdirsyncer/config
+airootfs/etc/skel/.config/newsboat/config
