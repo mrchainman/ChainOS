@@ -28,10 +28,6 @@ printf "Done with pentest, continuing with programs...\n" &&
 pacman -S --noconfirm $(cat ../packages/programs.pkgs) &&
 printf "Done with programs, continuing with virutalisation...\n" &&
 pacman -S --noconfirm $(cat ../packages/virutalisation.pkgs) &&
-printf "Done with virutalisation, continuing with aur...\n" &&
-paru -S --noconfirm $(cat ../packages/aur.pkgs) &&
-printf "Done with aur, continuing with pip...\n" &&
-pip install -r ../packages/pip.pkgs &&
 printf "Done installing packages!\nTime to configure your new system :D\n\nChainOS version 0.1\n\n"
 
 printf "Please enter your desired username:\n"
