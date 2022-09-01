@@ -83,6 +83,7 @@ efibootmgr
 electron
 electron17
 ethtool
+eww
 exfatprogs
 exploitdb
 extra-cmake-modules
@@ -120,6 +121,7 @@ gnu-netcat
 go
 go-tools
 gobuster
+gotify-dunst-git
 gpm
 gptfdisk
 grep
@@ -293,6 +295,8 @@ perl-file-mimeinfo
 perl-json
 perl-net-ssleay
 picom
+pip3 install mitzasql
+pip3 install mitzasql[clipboard]
 pipewire-jack
 pipewire-support
 pkgconf
@@ -448,6 +452,7 @@ resvg
 rhash
 rofi
 rofi-emoji
+rofi-greenclip
 rsync
 rtw89-dkms-git
 ruby
@@ -469,10 +474,12 @@ snapper-support
 snapper-tools
 socat
 sof-firmware
+spotify-player
 sqlmap
 squashfs-tools
 squashfuse
 sshfs
+starship
 sudo
 syslinux
 systemd
@@ -547,6 +554,7 @@ yajl
 yarn
 youtube-dl
 yq
+zabbixmon-bin
 zathura-pdf-mupdf
 zenmap
 zip
