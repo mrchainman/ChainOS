@@ -253,8 +253,6 @@ neomutt
 neovim
 nerd-fonts-jetbrains-mono
 net-tools
-network-manager-applet
-networkmanager-support
 newsboat
 nfs-utils
 nikto
@@ -526,7 +524,6 @@ which
 wireless-regdb
 wireless_tools
 wireshark-qt
-wpa_supplicant
 xcb-util-xrm
 xdg-ninja-git
 xdg-user-dirs
