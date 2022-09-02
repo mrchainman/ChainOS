@@ -77,3 +77,4 @@ cp -rP /usr/etc/loader /mnt/boot/
 printf "Copied loader config..."
 arch-chroot /mnt bootctl install
 printf "Installed and configured bootloader\n"
+arch-chroot /mnt usermod -aG sys,scanner,cups,sambashare,realtime,video,lp,input chain

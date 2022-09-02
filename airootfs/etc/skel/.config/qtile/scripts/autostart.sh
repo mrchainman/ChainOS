@@ -12,6 +12,7 @@ iwgtk -i &
 flameshot &
 tp-battery-icon &
 networkd-notify &
+protonmail-bridge &
 kitty --listen-on=unix:@neomutt --class="coms" -e "neomutt" &
 kitty --listen-on=unix:@newsboat --class="coms" -e "newsboat" &
 kitty --listen-on=unix:@ikhal --class="coms" -e "ikhal" &
