@@ -330,6 +330,7 @@ xz
 yajl
 yarn
 yq
+amd-ucode
 apparmor
 base
 base-devel
@@ -343,6 +344,7 @@ gcc
 gcc-libs
 gettext
 glibc
+intel-ucode
 linux-atm
 linux-firmware
 linux-firmware-marvell
