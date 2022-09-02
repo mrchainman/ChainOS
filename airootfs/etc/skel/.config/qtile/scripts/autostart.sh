@@ -10,6 +10,7 @@ dunst &
 snixembed --fork &
 iwgtk -i &
 flameshot &
+tp-battery-icon &
 networkd-notify &
 kitty --listen-on=unix:@neomutt --class="coms" -e "neomutt" &
 kitty --listen-on=unix:@newsboat --class="coms" -e "newsboat" &
