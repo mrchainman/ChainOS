@@ -1,9 +1,9 @@
 #!/bin/bash
-printf "Please choose the username for the live environment:\n"
+printf "Please choose the username:\n"
 read username
-printf "Please choose the hostname for the live environment:\n"
+printf "Please choose the hostname:\n"
 read hostname
-printf "Please choose the password for the live environment:\n"
+printf "Please choose the password:\n"
 read pass
 
 passhash=$(openssl passwd -6 $pass)

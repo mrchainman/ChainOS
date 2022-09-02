@@ -20,15 +20,28 @@ Dependencies:
 
 archiso
 
-There are to files, where you can specify the installed packages:
-- ./packages.x86_64 for the live environment
-- ./airootfs/root/packages/ for the installed environment
+There are multiple files, where you can specify the installed packages, separated in categories:
+- ./packages/audio.pkgs
+- ./packages/aur.manual
+- ./packages/de.pkgs
+- ./packages/fonts.pkgs
+- ./packages/garuda.pkgs
+- ./packages/libraries.pkgs
+- ./packages/lowlevelutils.pkgs
+- ./packages/main.pkgs
+- ./packages/pentest.pkgs
+- ./packages/pip.manual
+- ./packages/programs.pkgs
+- ./packages/python.pkgs
+- ./packages/repos.pkgs
+- ./packages/virutalisation.pkgs
 
-To easely replicate the installed envrionment in the live environment you can use the folloing command:
+Onse you chose your packages, execute:
 
-cat airootfs/root/packages/* > packages.x86_64
+cat ./packages/*.pkgs > packages.x86_64
 
-Everything you put under airootfs/ will be copied in to the Filesystem of the image, but NOT into the installed system!
+Everything you put under airootfs/ will be copied in to the Filesystem of the image.
+
 The userconfiguration resides in airootfs/etc/skel/
 
 To prepare for building just exeucte the setup.sh script
@@ -43,7 +56,7 @@ to test it with quemu:
 
 run_archiso -u -i ~/<iso-name>
 
-Once in the liveenvironment you can call `cd scripts && bash install.sh` to start the installation process.
+Once in the liveenvironment you can call `install-chainos` to start the installation process.
 
 **CAREFUL**
 
