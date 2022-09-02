@@ -95,3 +95,5 @@ There are also some user systemd units which can be found under ~/.local/share/s
 Most of the configuation for qtile and other programs are taken from https://github.com/dani-lp/dotfiles
 
 A lot of usefule packages come from the garuda and chaotic-aur repo https://garudalinux.org/
+
+Base of the Qutebrowser home page was  https://github.com/DrElyk/Web-Browser-Homepage

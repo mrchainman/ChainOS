@@ -48,6 +48,6 @@ settings:
       mg: https://metager.org/meta/meta.ger3?eingabe={}
       st: https://stackoverflow.com/search?q={}&s=3a881e05-49e6-4459-9eac-b73f3ca6e9ce
   url.start_pages:
-    global: https://metager.org
+    global: http://localhost:8080
   window.transparent:
     global: true
