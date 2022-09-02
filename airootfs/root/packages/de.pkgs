@@ -9,10 +9,9 @@ dunst
 gksu
 gnome-themes-extra
 gtk-engine-murrine
+iwd
 kvantum
 lxappearance-gtk3
-network-manager-applet
-networkmanager-support
 packagekit
 packagekit-qt5
 performance-tweaks
