@@ -16,3 +16,4 @@ airootfs/etc/skel/.config/newsboat
 airootfs/etc/skel/.config/mutt
 airootfs/etc/skel/.config/gotify-dunst
 airootfs/etc/skel/.config/zabbixmon
+airootfs/usr/etc/boot.tar.xz
