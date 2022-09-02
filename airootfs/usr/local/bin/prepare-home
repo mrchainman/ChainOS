@@ -1,0 +1,9 @@
+#!/bin/bash
+cd ~/.config/nvim &&
+rm -rf plugged && || printf "plugged not present\n"
+tar xf plugged.tar.xz &&
+printf "Plug prepared\n"
+cd ~/.config &&
+rm -rf coc && || printf "coc not present\n"
+tar xf coc.tar.xz &&
+printf "Coc prepared\n"
