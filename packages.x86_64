@@ -272,7 +272,6 @@ nvme-cli
 open-iscsi
 open-vm-tools
 openssh
-openvpn
 osinfo-db
 ospd
 ostree
@@ -506,7 +505,6 @@ unarj
 unrar
 unzip
 urlview
-usb_modeswitch
 usbmuxd
 usbredir
 usbutils
@@ -530,7 +528,6 @@ xdg-user-dirs
 xdg-utils
 xf86-input-synaptics
 xfsprogs
-xl2tpd
 xorg-fonts-misc
 xorg-server
 xorg-server-xephyr

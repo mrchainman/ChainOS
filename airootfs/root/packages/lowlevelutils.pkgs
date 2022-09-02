@@ -115,7 +115,6 @@ nvme-cli
 open-iscsi
 open-vm-tools
 openssh
-openvpn
 osinfo-db
 ospd
 ostree
@@ -156,7 +155,6 @@ testdisk
 tpm2-tss
 tree
 udftools
-usb_modeswitch
 usbmuxd
 usbredir
 usbutils
@@ -167,7 +165,6 @@ wireless-regdb
 wireless_tools
 xcb-util-xrm
 xfsprogs
-xl2tpd
 xz
 yajl
 yarn
