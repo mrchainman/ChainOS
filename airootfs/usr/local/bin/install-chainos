@@ -66,8 +66,9 @@ printf "Copied boot..."
 rm -rf /mnt/.snapshots
 arch-chroot /mnt btrfs subvolume create /.snapshots
 printf "Created snapshot subvolume\n"
-arch-chroot /mnt bootctl install
-cp -rP /usr/etc/loader mnt/boot/
+# Created with tar caf boot.tar.xz /boot
+tar xf boot.tar.xz --directory=/mnt/
+cp -rP /usr/etc/loader /mnt/boot/
 printf "Copied loader config..."
-arch-chroot /mnt bootctl update
+arch-chroot /mnt bootctl install
 printf "Installed and configured bootloader\n"
