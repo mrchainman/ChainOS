@@ -31,8 +31,6 @@ cat > airootfs/etc/hostname << EOF
 $hostname
 EOF
 echo "HOME=/home/$username" > airootfs/etc/env
-echo "PATH=\$PATH:/home/$username/.local/bin" > airootfs/etc/environment
-echo "QT_STYLE_OVERRIDE=kvantum" >> airootfs/etc/environment
 printf "Done, delete backupfiles? (y/n)\n"
 read del
 if [ $del = y ]

@@ -128,6 +128,7 @@ grep
 groff
 gstreamer-meta
 gtk-engine-murrine
+gtk4
 guitarix
 gzip
 hdparm
@@ -466,6 +467,7 @@ semver
 sg3_utils
 shadow
 smartmontools
+snap-pac
 snapper
 snapper-support
 snapper-tools
@@ -550,4 +552,3 @@ yq
 zathura-pdf-mupdf
 zenmap
 zip
-snap-pac

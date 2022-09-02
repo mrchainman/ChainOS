@@ -2,7 +2,6 @@
 Description=Sync mail
 Wants=mail.timer
 [Service]
-EnvironmentFile=/etc/env
-ExecStart=/bin/bash ${HOME}/.local/bin/sync-mail.sh
+ExecStart=/bin/bash sync-mail.sh
 [Install]
 WantedBy=multi-user.target

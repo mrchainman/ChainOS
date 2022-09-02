@@ -19,7 +19,6 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/usr/local/bin/"]="0:0:755"
   ["/usr/bin/"]="0:0:755"
-  ["/etc/skel/.local/bin/"]="0:0:755"
   ["/etc/skel/.config/qtile/scripts/"]="0:0:755"
   ["/etc/skel/.config/vifm/scripts/"]="0:0:755"
 )
