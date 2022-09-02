@@ -5,5 +5,6 @@ tar xf plugged.tar.xz &&
 printf "Plug prepared\n"
 cd ~/.config &&
 rm -rf coc && || printf "coc not present\n"
+cat coc-split/* > coc.tar.xz &&
 tar xf coc.tar.xz &&
 printf "Coc prepared\n"
