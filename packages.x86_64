@@ -85,7 +85,6 @@ noto-fonts-emoji
 noto-fonts-extra
 otf-font-awesome
 terminus-font
-tldr
 ttf-dejavu
 ttf-fantasque-sans-mono
 ttf-fira-sans
@@ -414,6 +413,7 @@ sshfs
 teamviewer
 texinfo
 texlive-full
+tldr
 torbrowser-launcher
 ufw
 vdirsyncer
@@ -479,6 +479,7 @@ python-wcwidth
 python-webencodings
 python-wrapt
 python-xmltodict
+python-configargparse
 chaotic-keyring
 chaotic-mirrorlist
 blackarch-keyring

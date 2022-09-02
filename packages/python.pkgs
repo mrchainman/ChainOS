@@ -53,3 +53,4 @@ python-wcwidth
 python-webencodings
 python-wrapt
 python-xmltodict
+python-configargparse

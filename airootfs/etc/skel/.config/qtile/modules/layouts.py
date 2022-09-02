@@ -33,6 +33,8 @@ floating_layout = layout.Floating(
         Match(title="nullplayer"),  # MPV
         Match(wm_class="TeamworkTimer"),  # TW Timer
         Match(wm_class="Jitsi Meet"),  # Jitsi
+        Match(wm_class="iwgtk"),  # Jitsi
+        Match(wm_class="proton-bridge"),  # Jitsi
 
         # TODO add matches
     ],
