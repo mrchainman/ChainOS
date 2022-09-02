@@ -1,0 +1,191 @@
+#!/usr/bin/env python3
+# networkd-notify: desktop notification integration for systemd-networkd
+# Copyright(c) 2016-2019 by wave++ "Yuri D'Elia" <wavexx@thregr.org>
+# Distributed under GPLv3+ (see COPYING) WITHOUT ANY WARRANTY.
+from __future__ import print_function, division, generators, unicode_literals
+
+import argparse
+import subprocess
+import sys
+import os
+
+import gi
+from gi.repository import GLib as glib
+
+import dbus
+import dbus.mainloop.glib
+
+
+# Constants
+NETWORKCTL = ['/usr/bin/networkctl', '/bin/networkctl']
+IWCONFIG = ['/usr/bin/iwconfig', '/sbin/iwconfig']
+APP_NAME  = 'networkd'
+
+STATE_IGN = {'carrier', 'degraded'}
+STATE_MAP = {'off': 'offline',
+             'no-carrier': 'disconnected',
+             'dormant': 'configuring ...',
+             'routable': 'online'}
+
+# Nifty globals
+IFACE_MAP = {}
+NOTIFY_MS_SHORT = 1000
+NOTIFY_MS_LONG = 3000
+
+NOTIFY_IF = None
+NETWORKD_IF = None
+
+
+def refresh_notify_if(bus):
+    global NOTIFY_IF
+    NOTIFY_IF = dbus.Interface(bus.get_object('org.freedesktop.Notifications',
+                                              '/org/freedesktop/Notifications'),
+                               'org.freedesktop.Notifications')
+
+
+def notify(title, text, time=NOTIFY_MS_SHORT):
+    if NOTIFY_IF:
+        NOTIFY_IF.Notify(APP_NAME, 0, '', title, text, '', '', time)
+
+
+def resolve_path(path_list):
+    for path in path_list:
+        if os.path.exists(path):
+            return path
+    return None
+
+
+def update_iface_map():
+    global NETWORKD_IF
+    if NETWORKD_IF is None:
+        bus = dbus.SystemBus()
+        NETWORKD_IF = dbus.Interface(bus.get_object(
+            'org.freedesktop.network1',
+            '/org/freedesktop/network1'),
+            'org.freedesktop.network1.Manager'
+        )
+
+    IFACE_MAP.clear()
+    for (_idx, name, path) in NETWORKD_IF.ListLinks():
+        IFACE_MAP[str(path)] = str(name)
+
+def get_iface_data(iface):
+    out = subprocess.check_output([NETWORKCTL, 'status', '--no-pager', '--no-legend', '--lines=0', '--', iface])
+    data = {}
+
+    oldk = None
+    width = None
+    colsep = ': '
+    for line in out.split(b'\n')[1:-1]:
+        line = line.decode('ascii')
+        if width is None:
+            width = line.find(colsep)
+        k = line[:width].strip() or oldk
+        oldk = k
+        v = line[width+len(colsep):].strip()
+        if k not in data:
+            data[k] = v
+        elif type(data[k]) == list:
+            data[k].append(v)
+        else:
+            data[k] = [data[k], v]
+    return data
+
+
+def unquote(buf, char='\\'):
+    idx = 0
+    while True:
+        idx = buf.find(char, idx)
+        if idx < 0: break
+        buf = buf[:idx] + buf[idx+1:]
+        idx += 1
+    return buf
+
+
+def get_wlan_essid(iface):
+    out = subprocess.check_output([IWCONFIG, '--', iface])
+    line = out.split(b'\n')[0].decode('ascii')
+    essid = line[line.find('ESSID:')+7:-3]
+    return unquote(essid)
+
+
+def property_changed(typ, data, _, path):
+    if typ != 'org.freedesktop.network1.Link':
+        return
+    if not path.startswith('/org/freedesktop/network1/link/_'):
+        return
+    if data.get('AdministrativeState') == 'initialized':
+        update_iface_map()
+    if 'OperationalState' not in data:
+        return
+    state = data['OperationalState']
+    if state in STATE_IGN:
+        return
+
+    iface = IFACE_MAP[path]
+
+    hstate = STATE_MAP.get(state, state)
+    if state != 'routable':
+        notify(iface, hstate)
+    else:
+        data = get_iface_data(iface)
+
+        # append ESSID to the online state
+        if data['Type'] == 'wlan':
+            data['ESSID'] = get_wlan_essid(iface)
+        if 'ESSID' in data and data['ESSID']:
+            hstate += ' @ ' + data['ESSID']
+
+        # filter out uninteresting addresses
+        addrs = []
+        if type(data['Address']) != list:
+            addrs = [data['Address']]
+        else:
+            for addr in data['Address']:
+                if addr.startswith('127.') or \
+                   addr.startswith('fe80:'):
+                    continue
+                addrs.append(addr)
+
+        notify(iface, '{}\n{}'.format(hstate, ', '.join(addrs)), NOTIFY_MS_LONG)
+
+
+def name_owner_changed(name, old_owner, new_owner, path):
+    if name == 'org.freedesktop.Notifications':
+        refresh_notify_if(dbus.SessionBus())
+
+
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser(description='networkd notification daemon')
+    args = ap.parse_args()
+
+    NETWORKCTL = resolve_path(NETWORKCTL)
+    if NETWORKCTL is None:
+        sys.exit("networkctl binary not found")
+
+    IWCONFIG = resolve_path(IWCONFIG)
+    if IWCONFIG is None:
+        sys.exit("iwconfig binary not found")
+
+    # listen on system-wide bus for networkd events
+    dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
+    bus = dbus.SystemBus()
+    bus.add_signal_receiver(property_changed,
+                            bus_name='org.freedesktop.network1',
+                            signal_name='PropertiesChanged',
+                            path_keyword='path')
+
+    # register on session bus for notification daemon changes
+    sessionbus = dbus.SessionBus()
+    sessionbus.add_signal_receiver(name_owner_changed,
+                                   bus_name='org.freedesktop.DBus',
+                                   signal_name='NameOwnerChanged',
+                                   path_keyword='path')
+    refresh_notify_if(sessionbus)
+
+    # initialize the initial interface map
+    update_iface_map()
+
+    # main loop
+    mainloop = glib.MainLoop()
+    mainloop.run()
