@@ -58,12 +58,14 @@ snap-pac
 snapper
 snapper-support
 snapper-tools
+systemd-resolvconf
 ueberzug
 unarchiver
 unarj
 unrar
 unzip
 urlview
+xclip
 xf86-input-synaptics
 xorg-server
 xorg-server-xephyr
@@ -397,6 +399,7 @@ khal
 kitty
 kpublictransport
 mpv
+neo-matrix
 neomutt
 neovim
 newsboat

@@ -39,3 +39,4 @@ then
 else
 	exit 0
 fi
+cat ./packages/*.pkgs > packages.x86_64
