@@ -53,15 +53,19 @@ printf "Finished pacstrap\n"
 genfstab -U /mnt >> /mnt/etc/fstab.new &&
 printf "Generated fstab\n"
 printf "Copying files over..."
-cp -rP /etc/* mnt/etc/
+cp -rP /root/* /mnt/root/
+printf "Copied root..."
+cp -rP /home/* /mnt/home/
+printf "Copied home..."
+cp -rP /etc/* /mnt/etc/
 printf "Copied etc..."
-cp -rP /usr/* mnt/usr/
+cp -rP /usr/* /mnt/usr/
 printf "Copied usr..."
-cp -rP /var/* mnt/var/
+cp -rP /var/* /mnt/var/
 printf "Copied var..."
-cp -rP /opt/* mnt/opt/
+cp -rP /opt/* /mnt/opt/
 printf "Copied opt..."
-cp -rP /boot/* mnt/boot/
+cp -rP /boot/* /mnt/boot/
 printf "Copied boot..."
 rm -rf /mnt/.snapshots
 arch-chroot /mnt btrfs subvolume create /.snapshots
