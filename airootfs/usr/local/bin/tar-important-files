@@ -1,3 +1,5 @@
 #!/bin/bash
-tar cf custom.tar .ssh .config/msmtp .config/isync .config/newsboat .config/vdirsyncer .config/rbw .local/share/gnupg .local/share/pass .config/mutt .config/protonmail .config/zabbixmon .config/gotify-dunst .config/docker
-zip -e custom.zip custom.tar
+cd ~/ &&
+rm .data/custom.zip &&
+tar cf custom.tar .ssh .config/msmtp .config/isync .config/newsboat .config/vdirsyncer .config/rbw .local/share/gnupg .local/share/pass .config/mutt .config/protonmail .config/zabbixmon .config/gotify-dunst .config/docker &&
+zip -e .data/custom.zip custom.tar &&
