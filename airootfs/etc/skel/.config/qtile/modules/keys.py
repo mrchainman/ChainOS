@@ -110,8 +110,7 @@ keys = [
     # menus
     Key([mod], "e", lazy.spawn("rofi -show drun -theme ~/.config/rofi/launcher.rasi"), desc="Launch Rofi"),
     Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'"), desc="Launch Rofi"),
-    Key([mod, shift], "e", lazy.spawn("" + home + "/.local/bin/power"), desc="Power Menu"),
-    Key([mod, shift], "n", lazy.spawn("" + home + "/.local/bin/nmgui"), desc="Network Menu"),
+    Key([mod, shift], "e", lazy.spawn("power"), desc="Power Menu"),
     # focus, move windows and screens
     Key([mod], "j", lazy.layout.down(), desc="Move focus down in current stack pane"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up in current stack pane"),
@@ -156,9 +155,6 @@ keys = [
     Key([alt], "o", lazy.spawn("umlaute.sh o"), desc="Copy Ö to clipboard"),
     Key([alt], "u", lazy.spawn("umlaute.sh u"), desc="Copy Ü to clipboard"),
     # screenshots
-    Key([], "Print", lazy.spawn("" + home + "/.local/bin/prtscreen"), desc="Print Screen"),
-    Key([mod], "Print", lazy.spawn("" + home + "/.local/bin/prtscreenregion"), desc="Print region of screen"),
-    Key([mod, shift], "s", lazy.spawn("" + home + "/.local/bin/prtscreenregion"), desc="Print region of screen"),
     # audio stuff
     Key([], "XF86AudioRaiseVolume", lazy.spawn("./.config/qtile/scripts/temp_vol.sh up"), desc="Increase volume",),
     Key([], "XF86AudioLowerVolume", lazy.spawn("./.config/qtile/scripts/temp_vol.sh down"), desc="Decrease volume",),
