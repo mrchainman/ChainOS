@@ -165,7 +165,6 @@ virglrenderer
 which
 wireless-regdb
 wireless_tools
-wpa_supplicant
 xcb-util-xrm
 xfsprogs
 xl2tpd
