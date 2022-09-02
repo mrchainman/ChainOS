@@ -1,2 +1,3 @@
 #!/bin/bash
-git clone https://github.com/mrchainman/coc-config ~/.config/
+rm -rf ~/.config/coc
+git clone https://github.com/mrchainman/coc-config ~/.config/coc
