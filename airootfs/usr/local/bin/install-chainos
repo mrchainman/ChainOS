@@ -70,8 +70,9 @@ printf "Copied boot..."
 rm -rf /mnt/.snapshots
 arch-chroot /mnt btrfs subvolume create /.snapshots
 printf "Created snapshot subvolume\n"
-# Created with tar caf boot.tar.xz /boot
-tar xf boot.tar.xz --directory=/mnt/
+# Created with tar caf boot.tar.xz /boot + split -b 10m boot.tar.xz boot/boot.tar.xz-
+cat /usr/etc/boot/* > /usr/etc/boot.tar.xz
+tar xf /usr/etc/boot.tar.xz --directory=/mnt/
 cp -rP /usr/etc/loader /mnt/boot/
 printf "Copied loader config..."
 arch-chroot /mnt bootctl install
