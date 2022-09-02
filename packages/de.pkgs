@@ -9,6 +9,8 @@ dunst
 gksu
 gnome-themes-extra
 gtk-engine-murrine
+gtk4
+iwd
 iwd
 kvantum
 lxappearance-gtk3
@@ -37,6 +39,7 @@ rofi-emoji
 samba-support
 scanner-support
 sddm
+snap-pac
 snapper
 snapper-support
 snapper-tools
@@ -60,5 +63,3 @@ xorg-xsetroot
 xorg-xwayland
 xorg-xwininfo
 xsel
-snap-pac
-gtk4

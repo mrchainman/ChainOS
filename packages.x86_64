@@ -13,17 +13,6 @@ pipewire-jack
 pipewire-support
 playerctl
 pulsemixer
-starship
-rofi-greenclip
-zabbixmon-bin
-gotify-dunst-git
-eww
-spotify-player
-mutt-wizard
-xfce-polkit
-iwgtk
-tp-battery-icon-git
-networkd-notify-git
 appmenu-gtk-module
 beautyline
 betterlockscreen
@@ -35,6 +24,8 @@ dunst
 gksu
 gnome-themes-extra
 gtk-engine-murrine
+gtk4
+iwd
 iwd
 kvantum
 lxappearance-gtk3
@@ -63,6 +54,7 @@ rofi-emoji
 samba-support
 scanner-support
 sddm
+snap-pac
 snapper
 snapper-support
 snapper-tools
@@ -86,8 +78,6 @@ xorg-xsetroot
 xorg-xwayland
 xorg-xwininfo
 xsel
-snap-pac
-gtk4
 nerd-fonts-jetbrains-mono
 noto-fonts
 noto-fonts-cjk
@@ -386,8 +376,6 @@ sqlmap
 tcpdump
 wireshark-qt
 zenmap
-mitzasql
-mitzasql[clipboard]
 android-tools
 arandr
 arch-install-scripts
