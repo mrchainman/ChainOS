@@ -91,5 +91,7 @@ get-coc.sh which clones the coc config for nvim into ~/.config/coc
 There are also some user systemd units which can be found under ~/.local/share/systemd/user
 
 **CREDIT:**
+
 Most of the configuation for qtile and other programs are taken from https://github.com/dani-lp/dotfiles
+
 A lot of usefule packages come from the garuda and chaotic-aur repo https://garudalinux.org/
