@@ -36,7 +36,7 @@ def open_launcher():
 
 
 def open_powermenu():
-    qtile.cmd_spawn("" + home + "/.local/bin/power")
+    qtile.cmd_spawn("power")
 
 
 def open_calendar():
