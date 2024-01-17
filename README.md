@@ -1,6 +1,16 @@
 **WORK IN PROGRESS**
 
-**NOW WORKING:**
+**See: https://github.com/mrchainman/chainos-qtile-config in the mean time**
+
+
+
+
+
+
+
+
+
+
 
 Live iso
 
